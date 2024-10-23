@@ -143,47 +143,149 @@ reserve_table(4, 'Artem', False)
 reserve_table(5, 'Artur', True)  # Артур не должен занять место Василия
 print(tables)"""
 
-def is_table_free(number_table: int) -> bool:
-    global tables
-    return tables.get(number_table) != None
+# def is_table_free(number_table: int) -> bool:
+#     global tables
+#     return tables.get(number_table) != None
+#
+#
+# def get_free_tables():
+#     return [table for table, name in tables.items() if name == None]
+#
+#
+# def reserve_table(number_table: int, name: str, status_vip=False) -> None :
+#     global tables
+#     if is_table_free(number_table) == False:
+#         print(3)
+#         print(is_table_free(3))
+#         tables[number_table] = {'name': name, 'is_vip': status_vip}
+#
+#
+# def delete_reservation(number_table: str) -> None:
+#     global tables
+#     tables[number_table] = None
+#
+# tables = {
+#     1: {'name': 'Andrey', 'is_vip': True},
+#     2: None,
+#     3: None,
+#     4: None,
+#     5: {'name': 'Vasiliy', 'is_vip': False},
+#     6: None,
+#     7: None,
+#     8: None,
+#     9: None,
+# }
+#
+# print({1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False},
+#        6: None, 7: None, 8: None, 9: None}, {1: {'name': 'Andrey', 'is_vip': True}, 2: None,
+#                                              3: {'name': 'Gena', 'is_vip': True},
+#                                              4: {'name': 'Artem','is_vip': False},
+#                                              5: {'name': 'Vasiliy', 'is_vip': False},
+#                                              6: None, 7: None, 8: None, 9: None}, sep='\n')
+# print(tables)
+# reserve_table(3, 'Gena', True)
+# reserve_table(4, 'Artem', False)
+# reserve_table(5, 'Artur', True)  # Артур не должен занять место Василия
+# print(tables)
 
+'''
+Настало время в нашем ресторане добавить возможность делать заказ посетителям ресторана. Они могут выбрать любую позицию из меню по следующим категориям: 
 
-def get_free_tables():
-    return [table for table, name in tables.items() if name == None]
+salad
+soup
+main_dish
+drink
+desert
+ Подумайте где и в каком виде можно хранить названия данных категорий
 
+ 
 
-def reserve_table(number_table: int, name: str, status_vip=False) -> None :
-    global tables
-    if is_table_free(number_table) == False:
-        print(3)
-        print(is_table_free(3))
-        tables[number_table] = {'name': name, 'is_vip': status_vip}
-
-
-def delete_reservation(number_table: str) -> None:
-    global tables
-    tables[number_table] = None
+Ваша задача переписать последнюю рабочую версию функции reserve_table 
+(задача Резервация столов: изменение требований - 2) так, чтобы она создавала поле для хранения заказа 
+(ключ «order» со значением пустой словарь). Вот такая структура должна получаться после резервации стола.
 
 tables = {
-    1: {'name': 'Andrey', 'is_vip': True},
+    1: {'name': 'Andrey', 'is_vip': True, 'order': {}},
     2: None,
     3: None,
     4: None,
-    5: {'name': 'Vasiliy', 'is_vip': False},
+    5: {'name': 'Vasiliy', 'is_vip': False, 'order': {}},
     6: None,
     7: None,
     8: None,
     9: None,
 }
+В это поле мы далее будем складывать заказы при помощи функции make_order.
 
-print({1: {'name': 'Andrey', 'is_vip': True}, 2: None, 3: None, 4: None, 5: {'name': 'Vasiliy', 'is_vip': False},
-       6: None, 7: None, 8: None, 9: None}, {1: {'name': 'Andrey', 'is_vip': True}, 2: None,
-                                             3: {'name': 'Gena', 'is_vip': True},
-                                             4: {'name': 'Artem','is_vip': False},
-                                             5: {'name': 'Vasiliy', 'is_vip': False},
-                                             6: None, 7: None, 8: None, 9: None}, sep='\n')
-print(tables)
-reserve_table(3, 'Gena', True)
-reserve_table(4, 'Artem', False)
-reserve_table(5, 'Artur', True)  # Артур не должен занять место Василия
+Теперь самое интересное - функция make_order, которая принимает номер стола и далее перечисление желаемого. 
+
+Вот примеры вызова функции make_order для стола номер 1
+
+make_order(1, soup='Borsh')
+make_order(1, desert='Наполеон', drink='Чай')
+Здесь мы видим, что человек сперва заказал борщ, а потом сделал повторный заказ, где  дозаказал десерт и напиток. В итоге, в структуре данных по первому столу должна сохраниться следующая информация
+
+1: {'is_vip': True,
+     'name': 'Andrey',
+     'order': {'desert': 'Наполеон', 'drink': 'Чай', 'soup': 'Borsh'}}
+Человек может сделать несколько заказов с одинаковыми категориями,
+
+make_order(1, soup='Borsh')
+make_order(1, desert='Наполеон', drink='Чай')
+make_order(1, desert='Медовик', drink='Кофе')
+в таком случае значения должны перезатираться и берется значение из последнего заказа
+
+1: {'is_vip': True,
+     'name': 'Andrey',
+     'order': {'desert': 'Медовик', 'drink': 'Кофе', 'soup': 'Borsh'}
+Еще может быть такая ситуация, что человек заказывает еду не из перечисленных выше категорий или просит оказать услугу в рамках заказа. Тогда все имена ключей, которые не входят в перечисленные выше категории меню, не нужно записывать в итоговый заказ. Вот пример, где во втором заказе попросили принести салфетку и манную кашу.
+
+make_order(1, soup='Borsh')
+make_order(1, soup='Лапша', bring='Салфетку', meal='Манка')
+Имена bring и meal отсутствуют в категориях, поэтому структура заказа для стола 1 должна будет выглядеть так:
+
+1: {'is_vip': True, 'name': 'Andrey', 'order': {'soup': 'Лапша'}}
+
+
+Для успешного решения задания вам необходимо определить функции reserve_table и make_order. Возможно понадобится продублировать функции, от которых зависела работа перечисленных ранее функций. Не забывайте про кнопку 
+«Запустить код» для проверки работоспособности программы перед отправкой.  
+'''
+
+def is_table_free(number_table: int) -> bool:
+    global tables
+    return tables.get(number_table) != None
+
+
+def reserve_table(number_table: int, name: str, status_vip=False) -> None :
+    global tables
+    if is_table_free(number_table) == False:
+        tables[number_table] = {'name': name, 'is_vip': status_vip, 'order': {}}
+
+
+def make_order(table: int, **kwargs) -> None:
+    global tables
+    category = {'salad', 'soup', 'main_dish', 'drink', 'desert'}
+    for key in kwargs:
+        if key in category:
+            [tables[table]['order'].setdefault(key, []).append(value) for value in kwargs[key].split(',')]
+
+def delete_order(*, number_table: int, delete_all=False, **kwargs) -> None:
+    global tables
+    if delete_all:
+        tables[number_table]['order'].clear()
+        return
+    order = tables[number_table]['order']
+    for key in kwargs:
+        if key in order and kwargs[key] == True:
+            del tables[number_table]['order'][key]
+    return
+
+
+tables = {
+    1: {'name': 'Andrey', 'is_vip': True, 'order': {}},
+    2: None,
+    3: {'name': 'Vasiliy', 'is_vip': False, 'order': {}},
+}
+make_order(1, soup='Borsh,Лапша', desert='Медовик', drink='Cola')
+make_order(1, soup='Гаспачо', desert='Печенье,Наполеон')
 print(tables)
