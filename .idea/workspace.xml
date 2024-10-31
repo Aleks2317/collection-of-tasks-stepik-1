@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff27c2aa-38a8-49c0-bc72-9b37f87ce4aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/11_caesar_chipher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +206,7 @@
       <updated>1726135546728</updated>
       <workItem from="1726135548536" duration="31376000" />
       <workItem from="1726772081174" duration="16795000" />
-      <workItem from="1728641031291" duration="75551000" />
+      <workItem from="1728641031291" duration="82185000" />
     </task>
     <servers />
   </component>
