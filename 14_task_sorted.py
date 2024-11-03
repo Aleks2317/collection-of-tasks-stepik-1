@@ -77,12 +77,58 @@ Music 100
  предметы должны выводиться в обратном алфавитном порядке без учета регистра
 '''
 
-def print_results(marks:list[tuple]) -> None:
-    [print(*mark) for mark in sorted(marks, key=lambda x: (x[1], x[0].lower()), reverse=True)]
+# def print_results(marks:list[tuple]) -> None:
+#     [print(*mark) for mark in sorted(marks, key=lambda x: (x[1], x[0].lower()), reverse=True)]
+#
+#
+#
+# marks = [('English', 88), ('Science', 90), ('Maths', 88),
+#          ('Physics', 93), ('History', 78), ('French', 78),
+#          ('Art', 78), ('Chemistry', 88), ('Programming', 91)]
+# print_results(marks)
+
+
+'''
+Сортировка отрезков
+Напишите функцию get_sort_lines, которая принимает список кортежей, в котором хранится информация о координатах двух точек на координатной прямой. Функция get_sort_lines должна вернуть новый список, в котором элементы расположены в порядке возрастания расстояния между точками, хранящимися в одном элементе.
 
 
 
-marks = [('English', 88), ('Science', 90), ('Maths', 88),
-         ('Physics', 93), ('History', 78), ('French', 78),
-         ('Art', 78), ('Chemistry', 88), ('Programming', 91)]
-print_results(marks)
+В случае равенства расстояний необходимо сортировать по возрастанию значения координаты первой точки, затем по возрастанию значения второй точки
+
+Sample Input 1:
+
+lines = [(-4, 4), (2, 3), (5, 9), (-1, -3) ]
+print(get_sort_lines(lines))
+Sample Output 1:
+
+[(2, 3), (-1, -3), (5, 9), (-4, 4)]
+Sample Input 2:
+
+lines = [(5, 4), (2, 3), (1, 0), (-1, -2) ]
+print(get_sort_lines(lines))
+Sample Output 2:
+
+[(-1, -2), (1, 0), (2, 3), (5, 4)]
+Sample Input 3:
+
+lines = [(5, 6), (5, 4), (1, 0), (0, -1), (1, 2), (2, 1)]
+print(get_sort_lines(lines))
+Sample Output 3:
+
+[(0, -1), (1, 0), (1, 2), (2, 1), (5, 4), (5, 6)]
+'''
+
+def args_for_sort_list(arg: tuple[int, int]) -> tuple[int, int, int]:
+    return max(arg) - min(arg), arg[0], arg[1]
+
+
+def get_sort_lines(aray: list[tuple[int,int]]) -> list[tuple[int,int]]:
+    return sorted(aray, key=args_for_sort_list)
+
+lines = [(-4, 4), (2, 3), (5, 9), (-1, -3) ]
+print(get_sort_lines(lines))
+
+lines = [(5, 4), (2, 3), (1, 0), (-1, -2) ]
+print(get_sort_lines(lines))
+
