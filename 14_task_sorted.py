@@ -339,4 +339,25 @@ def print_order_rating(data: list[tuple[str, int], ...]) -> None:
 # print_order_rating(drivers)
 
 
+def print_statistic(data: list[tuple[str, str]]) -> None:
+    stat = {}
+    for k, v in data:
+        stat.setdefault(k, set()).add(v)
+    for name in sorted(stat, key=lambda x: (-len(stat[x]), x.lower())):
+        print(f'Количество уникальных комментаторов {name} - {len(stat[name])}')
 
+
+
+data = [
+    ('karl', 'zhanna777'),
+    ('karl', 'мама_игоречка_98'),
+    ('qwerty03', 'pushka76'),
+    ('Billy', 'мама_игоречка_98'),
+    ('Billy', 'pushka76'),
+    ('qwerty03', 'joebiden'),
+    ('karl', 'zhanna777'),
+    ('karl', 'joebiden'),
+    ('karl', 'pushka76'),
+]
+
+print_statistic(data)
