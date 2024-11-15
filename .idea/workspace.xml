@@ -32,33 +32,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.10_task_shift_liters.executor": "Run",
-    "Python.11_caesar_chipher.executor": "Run",
-    "Python.12_factorial.executor": "Run",
-    "Python.17_task_higher_order_functions.executor": "Run",
-    "Python.1_task.executor": "Run",
-    "Python.2_task.executor": "Run",
-    "Python.3_task.executor": "Run",
-    "Python.4_task_table_for_restoran.executor": "Run",
-    "Python.5_task_remove_symbol.executor": "Run",
-    "Python.6_task_matrix.executor": "Run",
-    "Python.7_task_kwargs.executor": "Run",
-    "Python.8_task_one_doobl.executor": "Run",
-    "Python.9_task_shift.executor": "Run",
-    "Python.task.executor": "Run",
-    "Python.task_revers.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.10_task_shift_liters.executor&quot;: &quot;Run&quot;,
+    &quot;Python.11_caesar_chipher.executor&quot;: &quot;Run&quot;,
+    &quot;Python.12_factorial.executor&quot;: &quot;Run&quot;,
+    &quot;Python.17_task_higher_order_functions.executor&quot;: &quot;Run&quot;,
+    &quot;Python.1_task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.2_task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.3_task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.4_task_table_for_restoran.executor&quot;: &quot;Run&quot;,
+    &quot;Python.5_task_remove_symbol.executor&quot;: &quot;Run&quot;,
+    &quot;Python.6_task_matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.7_task_kwargs.executor&quot;: &quot;Run&quot;,
+    &quot;Python.8_task_one_doobl.executor&quot;: &quot;Run&quot;,
+    &quot;Python.9_task_shift.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task.executor&quot;: &quot;Run&quot;,
+    &quot;Python.task_revers.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\My_Python\stepik_generation_python_task\pythonProject1" />
@@ -240,7 +240,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/8_task_one_doobl.py" />
+      <option name="SCRIPT_NAME" value="C:\My_Python\stepik_generation_python_task\pythonProject1\8_task_one_doobl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -325,6 +325,7 @@
       <workItem from="1726772081174" duration="16795000" />
       <workItem from="1728641031291" duration="82185000" />
       <workItem from="1731486863547" duration="3002000" />
+      <workItem from="1731529256609" duration="986000" />
     </task>
     <servers />
   </component>
