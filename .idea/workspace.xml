@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff27c2aa-38a8-49c0-bc72-9b37f87ce4aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/19_decorate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_task_higher_order_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/17_task_higher_order_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/18_task_higher_order_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/18_task_higher_order_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/task.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,62 +34,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.10_task_shift_liters.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11_caesar_chipher.executor&quot;: &quot;Run&quot;,
-    &quot;Python.12_factorial.executor&quot;: &quot;Run&quot;,
-    &quot;Python.17_task_higher_order_functions.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1_task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2_task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.3_task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.4_task_table_for_restoran.executor&quot;: &quot;Run&quot;,
-    &quot;Python.5_task_remove_symbol.executor&quot;: &quot;Run&quot;,
-    &quot;Python.6_task_matrix.executor&quot;: &quot;Run&quot;,
-    &quot;Python.7_task_kwargs.executor&quot;: &quot;Run&quot;,
-    &quot;Python.8_task_one_doobl.executor&quot;: &quot;Run&quot;,
-    &quot;Python.9_task_shift.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task.executor&quot;: &quot;Run&quot;,
-    &quot;Python.task_revers.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.10_task_shift_liters.executor": "Run",
+    "Python.11_caesar_chipher.executor": "Run",
+    "Python.12_factorial.executor": "Run",
+    "Python.17_task_higher_order_functions.executor": "Run",
+    "Python.19_decorate.executor": "Run",
+    "Python.1_task.executor": "Run",
+    "Python.20_recursion.executor": "Run",
+    "Python.2_task.executor": "Run",
+    "Python.3_task.executor": "Run",
+    "Python.4_task_table_for_restoran.executor": "Run",
+    "Python.5_task_remove_symbol.executor": "Run",
+    "Python.6_task_matrix.executor": "Run",
+    "Python.7_task_kwargs.executor": "Run",
+    "Python.8_task_one_doobl.executor": "Run",
+    "Python.9_task_shift.executor": "Run",
+    "Python.task.executor": "Run",
+    "Python.task_revers.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/My_Python/stepik_generation_python_task/pythonProject1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\My_Python\stepik_generation_python_task\pythonProject1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.17_task_higher_order_functions">
-    <configuration name="10_task_shift_liters" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10_task_shift_liters.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.19_decorate">
     <configuration name="10_task_shift_liters" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
@@ -226,30 +208,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="8_task_one_doobl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pythonProject1" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\My_Python\stepik_generation_python_task\pythonProject1\8_task_one_doobl.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="9_task_shift" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="19_decorate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,7 +222,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9_task_shift.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/19_decorate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -272,7 +231,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="9_task_shift" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="20_recursion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,7 +245,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9_task_shift.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/20_recursion.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -297,11 +256,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.19_decorate" />
+        <item itemvalue="Python.20_recursion" />
         <item itemvalue="Python.17_task_higher_order_functions" />
         <item itemvalue="Python.12_factorial" />
         <item itemvalue="Python.11_caesar_chipher" />
-        <item itemvalue="Python.10_task_shift_liters" />
-        <item itemvalue="Python.9_task_shift" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +284,9 @@
       <workItem from="1726772081174" duration="16795000" />
       <workItem from="1728641031291" duration="82185000" />
       <workItem from="1731486863547" duration="3002000" />
-      <workItem from="1731529256609" duration="986000" />
+      <workItem from="1731529256609" duration="3288000" />
+      <workItem from="1733766232236" duration="9127000" />
+      <workItem from="1734282188852" duration="10688000" />
     </task>
     <servers />
   </component>
@@ -334,6 +295,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject1$3_task.coverage" NAME="3_task Coverage Results" MODIFIED="1727729598337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.venv" />
+    <SUITE FILE_PATH="coverage/pythonProject1$19_decorate.coverage" NAME="19_decorate Coverage Results" MODIFIED="1734332503723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$5_task_remove_symbol.coverage" NAME="5_task_remove_symbol Coverage Results" MODIFIED="1728839302117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$7_task_kwargs.coverage" NAME="7_task_kwargs Coverage Results" MODIFIED="1729353049252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$task.coverage" NAME="task Coverage Results" MODIFIED="1729445068151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -348,5 +310,6 @@
     <SUITE FILE_PATH="coverage/pythonProject1$4_task_table_for_restoran.coverage" NAME="4_task_table_for_restoran Coverage Results" MODIFIED="1729540256614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$12_factorial.coverage" NAME="12_factorial Coverage Results" MODIFIED="1730107150845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/pythonProject1$2_task.coverage" NAME="2_task Coverage Results" MODIFIED="1729066398514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/pythonProject1$20_recursion.coverage" NAME="20_recursion Coverage Results" MODIFIED="1734285138350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
